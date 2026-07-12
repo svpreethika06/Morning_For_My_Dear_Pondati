@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7c9b1">
+  <meta name="description" content="A private animated morning love experience.">
+  <title>Kalai Vanakkam En Azhagana Manaivi</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="premium.css?v=4" />
+  <script src="script.js?v=10" defer></script>
+  <script src="premium.js?v=4" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="sun-halo"></div>
+    <div class="mist mist-one"></div>
+    <div class="mist mist-two"></div>
+    <div class="light-particles" id="lightParticles"></div>
+  </div>
+
+  <section class="opening" id="opening" aria-label="Morning opening">
+    <div class="opening-sun" aria-hidden="true"></div>
+    <div class="opening-rings" aria-hidden="true"></div>
+    <article class="opening-glass">
+      <p class="micro-label">A sunrise made only for you</p>
+      <h1>
+        <span>Kalai Vanakkam</span>
+        <span>En Azhagana Manaivi</span>
+      </h1>
+      <p class="opening-text">Wakey Wakey Pondati before the world reaches you let my love be the first warmth that touches your morning</p>
+      <button class="primary-button" id="openExperience" type="button">
+        <span>Open Your Morning</span>
+        <span class="button-icon" aria-hidden="true">☀</span>
+      </button>
+    </article>
+  </section>
+
+  <section class="envelope-scene" id="envelopeScene" aria-hidden="true">
+    <div class="envelope-ambient" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <article class="envelope-stage">
+      <p class="micro-label">A little morning letter is waiting for you from your loving husband Sarvezshvaran</p>
+      <h2>For My Beloved Wife</h2>
+      <p class="envelope-intro">Tap the envelope gently maa</p>
+
+      <button class="envelope-button" id="openEnvelope" type="button" aria-label="Open your morning envelope">
+        <span class="envelope-shadow" aria-hidden="true"></span>
+
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope-back"></span>
+
+          <span class="envelope-letter">
+            <span class="letter-small">Good morning My Love</span>
+            <span class="letter-main">A sunrise from my heart</span>
+            <span class="letter-heart">♥</span>
+          </span>
+
+          <span class="envelope-pocket"></span>
+          <span class="envelope-flap"></span>
+
+          <span class="wax-seal">
+            <span>♥</span>
+          </span>
+        </span>
+
+        <span class="envelope-action">Open My Letter</span>
+      </button>
+
+      <p class="envelope-hint">One tap then let my love unfold</p>
+    </article>
+  </section>
+
+  <div class="sunrise-flash" id="sunriseFlash" aria-hidden="true">
+    <div class="flash-sun"></div>
+  </div>
+
+  <main class="experience" id="experience" aria-hidden="true">
+    <header class="floating-header glass-panel">
+      <div class="header-copy">
+        <strong>Good Morning My Beautiful Wife</strong>
+        <span>My first thought, My forever person</span>
+      </div>
+      <button class="round-button" id="musicButton" type="button" aria-label="Play our song">
+        <span id="musicIcon" aria-hidden="true">♪</span>
+        <span class="music-rings" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <section class="hero-card glass-panel">
+      <div class="hero-media">
+        <img id="heroPhoto" src="assets/our-photo.jpg?v=3" alt="A beautiful memory of us" fetchpriority="high" decoding="async">
+        <div class="photo-fallback" id="photoFallback" aria-hidden="true">
+          <div class="fallback-sun"></div>
+          <p>Our special photo will appear here</p>
+        </div>
+        <div class="photo-wash"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="micro-label">Your morning begins here</p>
+        <h2><span>Wakey Wakey</span><span>My Beautiful </span><span>Wifeyy</span></h2>
+        <p>If I cannot be beside you this morning becuase of our distance dont worry darling, let this sunrise carry my hug, my kiss, and my whole heart straight to you, maa</p>
+        <button class="soft-button" id="letterButton" type="button">Read My Morning Letter For You Wifey</button>
+      </div>
+    </section>
+
+    <section class="message-grid">
+      <article class="glass-panel message-card quote-card">
+        <p class="micro-label">From my heart</p>
+        <blockquote>“Every sunrise feels more beautiful because my heart wakes up loving you”</blockquote>
+      </article>
+
+      <article class="glass-panel message-card promise-card">
+        <button class="heart-button" id="heartButton" type="button" aria-label="Send hearts">♥</button>
+        <div>
+          <p class="micro-label">My promise</p>
+          <h3>I will never leave you maa</h3>
+          <p>I will always be with you in your heart, in your mind, and in every quiet moment when you miss me</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="kiss-section glass-panel">
+      <div>
+        <p class="micro-label">One touch from me to you</p>
+        <h3>Ready for your morning kisses baby maa?</h3>
+        <p id="kissMessage">Tap once and watch my kisses fly across your whole screen</p>
+      </div>
+      <button class="kiss-button" id="kissButton" type="button">
+        <span>Send Flying Kisses</span>
+        <span aria-hidden="true">💋</span>
+      </button>
+    </section>
+
+    <section class="love-universe glass-panel" id="loveUniverse">
+      <div class="universe-orbit" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="universe-heading">
+        <p class="micro-label">Our private music universe</p>
+        <h3>How does your heart feel this morning maa?</h3>
+        <p>Choose your mood and I will guide you towards a song that feels like I am sitting right beside you</p>
+      </div>
+
+      <div class="mood-selector" id="moodSelector" aria-label="Choose your mood">
+        <button type="button" data-mood="miss"><span>♡</span><strong>I miss you</strong><small>Let me feel close</small></button>
+        <button type="button" data-mood="peace"><span>☁</span><strong>I need peace</strong><small>Something soft and calm</small></button>
+        <button type="button" data-mood="smile"><span>☀</span><strong>Make me smile</strong><small>A little happiness</small></button>
+        <button type="button" data-mood="close"><span>∞</span><strong>Hold me close</strong><small>Stay with my heart</small></button>
+        <button type="button" data-mood="love"><span>♥</span><strong>I need your love</strong><small>Remind me I am yours</small></button>
+      </div>
+
+      <div class="mood-result" id="moodResult" aria-live="polite">
+        <span class="mood-result-icon">♪</span>
+        <div>
+          <strong>Choose one feeling my baby</strong>
+          <p>I will softly highlight songs that match your heart</p>
+        </div>
+        <button type="button" id="moodPlayButton" disabled>Play my song</button>
+      </div>
+
+      <div class="constellation-panel">
+        <div class="constellation-copy">
+          <p class="micro-label">Our relationship constellation</p>
+          <h4>Every song lights another part of us</h4>
+          <p id="constellationMessage">Listen to the playlist and watch our memories connect into a heart</p>
+        </div>
+
+        <div class="constellation-map" id="constellationMap" aria-label="Relationship constellation">
+          <svg viewBox="0 0 420 270" role="img" aria-label="Heart-shaped constellation">
+            <path class="constellation-path" d="M210 236 C180 205 70 145 70 82 C70 27 142 19 210 86 C278 19 350 27 350 82 C350 145 240 205 210 236 Z"></path>
+            <line x1="91" y1="76" x2="145" y2="50"></line>
+            <line x1="145" y1="50" x2="210" y2="101"></line>
+            <line x1="210" y1="101" x2="275" y2="50"></line>
+            <line x1="275" y1="50" x2="329" y2="76"></line>
+            <line x1="91" y1="76" x2="130" y2="156"></line>
+            <line x1="130" y1="156" x2="210" y2="226"></line>
+            <line x1="329" y1="76" x2="290" y2="156"></line>
+            <line x1="290" y1="156" x2="210" y2="226"></line>
+          </svg>
+
+          <button class="memory-star" data-star="0" style="--x:21%;--y:27%" type="button"><span>✦</span><small>5 June 2025</small></button>
+          <button class="memory-star" data-star="1" style="--x:35%;--y:18%" type="button"><span>✦</span><small>Singapore</small></button>
+          <button class="memory-star" data-star="2" style="--x:50%;--y:37%" type="button"><span>✦</span><small>Pondati</small></button>
+          <button class="memory-star" data-star="3" style="--x:65%;--y:18%" type="button"><span>✦</span><small>Johor Bahru</small></button>
+          <button class="memory-star" data-star="4" style="--x:79%;--y:27%" type="button"><span>✦</span><small>My promise</small></button>
+          <button class="memory-star" data-star="5" style="--x:31%;--y:63%" type="button"><span>✦</span><small>Our tomorrow</small></button>
+          <button class="memory-star" data-star="6" style="--x:50%;--y:86%" type="button"><span>✦</span><small>Forever</small></button>
+          <button class="memory-star" data-star="7" style="--x:69%;--y:63%" type="button"><span>✦</span><small>Always us</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="music-playlist glass-panel" id="musicPlaylist">
+      <div class="playlist-heading">
+        <p class="micro-label">A little playlist made for you</p>
+        <h3>Would you like to listen to some music my baby?</h3>
+        <p>Choose any song, sit back, and let every melody remind you that I am right there with you maa</p>
+      </div>
+
+      <div class="playlist-player">
+        <div class="now-playing-row">
+          <div class="music-art premium-vinyl" id="musicArt" aria-hidden="true">
+            <span class="vinyl-grooves"></span>
+            <span class="vinyl-label">
+              <img src="assets/our-photo.jpg?v=3" alt="">
+              <span>For My Pondati</span>
+            </span>
+            <span class="vinyl-shine"></span>
+          </div>
+
+          <div class="now-playing-copy" aria-live="polite">
+            <span class="now-playing-label">Now playing</span>
+            <strong id="playlistTitle">Choose a song maa</strong>
+            <span id="playlistArtist">Our 29-song morning playlist is waiting for you</span>
+          </div>
+
+          <button class="playlist-play-button" id="playlistPlayButton" type="button" aria-label="Play selected song">
+            <span id="playlistPlayIcon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+
+        <div class="playlist-progress-row">
+          <span id="playlistCurrentTime">0:00</span>
+          <input id="playlistProgress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Song progress">
+          <span id="playlistDuration">0:00</span>
+        </div>
+
+        <div class="playlist-controls" aria-label="Playlist controls">
+          <button id="playlistPrevious" type="button" aria-label="Previous song">‹</button>
+          <button id="playlistReplay" type="button" aria-label="Replay current song">↺</button>
+          <button id="playlistNext" type="button" aria-label="Next song">›</button>
+        </div>
+      </div>
+
+      <article class="dedication-card" id="dedicationCard">
+        <div class="dedication-icon" aria-hidden="true">♥</div>
+        <div>
+          <p class="micro-label">Why I chose this song for you</p>
+          <h4 id="dedicationTitle">Choose a song maa</h4>
+          <p id="dedicationText">Every song here carries a little part of my heart to you</p>
+        </div>
+        <div class="dedication-actions">
+          <button type="button" id="heartReactionButton">This feels like us ♡</button>
+          <button type="button" id="openCinemaButton">Enter our music moment</button>
+        </div>
+      </article>
+
+      <div class="playlist-tools">
+        <label class="playlist-search">
+          <span aria-hidden="true">⌕</span>
+          <input id="playlistSearch" type="search" placeholder="Search our songs…" autocomplete="off" aria-label="Search playlist">
+        </label>
+        <span class="playlist-count" id="playlistCount">29 songs</span>
+      </div>
+
+      <div class="track-list" role="list" aria-label="Choose a song">
+        <button class="track-button" type="button" data-track-index="0" role="listitem" data-search="vaaya en veera shakthisree gopalan">
+          <span class="track-number">01</span>
+          <span class="track-copy"><strong>Vaaya En Veera</strong><small>Shakthisree Gopalan</small></span>
+          <span class="track-duration">4:38</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="1" role="listitem" data-search="naan un arijit singh &amp; chinmayi">
+          <span class="track-number">02</span>
+          <span class="track-copy"><strong>Naan Un</strong><small>Arijit Singh &amp; Chinmayi</small></span>
+          <span class="track-duration">4:48</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="2" role="listitem" data-search="munbe vaa naresh iyer &amp; shreya ghoshal">
+          <span class="track-number">03</span>
+          <span class="track-copy"><strong>Munbe Vaa</strong><small>Naresh Iyer &amp; Shreya Ghoshal</small></span>
+          <span class="track-duration">5:57</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="3" role="listitem" data-search="dheema anirudh ravichander">
+          <span class="track-number">04</span>
+          <span class="track-copy"><strong>Dheema</strong><small>Anirudh Ravichander</small></span>
+          <span class="track-duration">3:55</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="4" role="listitem" data-search="pattuma anirudh ravichander &amp; ananthakrrishnan">
+          <span class="track-number">05</span>
+          <span class="track-copy"><strong>Pattuma</strong><small>Anirudh Ravichander &amp; Ananthakrrishnan</small></span>
+          <span class="track-duration">3:29</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="5" role="listitem" data-search="enna solla swetha mohan">
+          <span class="track-number">06</span>
+          <span class="track-copy"><strong>Enna Solla</strong><small>Swetha Mohan</small></span>
+          <span class="track-duration">3:32</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="6" role="listitem" data-search="naan aval illai karthik &amp; chinmayi">
+          <span class="track-number">07</span>
+          <span class="track-copy"><strong>Naan Aval Illai</strong><small>Karthik &amp; Chinmayi</small></span>
+          <span class="track-duration">4:36</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="7" role="listitem" data-search="motta paiya sooraj santhosh &amp; k. s. chithra">
+          <span class="track-number">08</span>
+          <span class="track-copy"><strong>Motta Paiya</strong><small>Sooraj Santhosh &amp; K. S. Chithra</small></span>
+          <span class="track-duration">4:33</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="8" role="listitem" data-search="yaaro ivan g.v. prakash kumar &amp; saindhavi">
+          <span class="track-number">09</span>
+          <span class="track-copy"><strong>Yaaro Ivan</strong><small>G.V. Prakash Kumar &amp; Saindhavi</small></span>
+          <span class="track-duration">4:44</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="9" role="listitem" data-search="en jeevan hariharan, saindhavi &amp; vaikom vijayalakshmi">
+          <span class="track-number">10</span>
+          <span class="track-copy"><strong>En Jeevan</strong><small>Hariharan, Saindhavi &amp; Vaikom Vijayalakshmi</small></span>
+          <span class="track-duration">5:22</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="10" role="listitem" data-search="takkunu takkunu anirudh ravichander">
+          <span class="track-number">11</span>
+          <span class="track-copy"><strong>Takkunu Takkunu</strong><small>Anirudh Ravichander</small></span>
+          <span class="track-duration">3:33</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="11" role="listitem" data-search="kannala kannala hiphop tamizha, kaushik krish &amp; padmalatha">
+          <span class="track-number">12</span>
+          <span class="track-copy"><strong>Kannala Kannala</strong><small>Hiphop Tamizha, Kaushik Krish &amp; Padmalatha</small></span>
+          <span class="track-duration">3:35</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="12" role="listitem" data-search="maalai mangum neram ranina reddy">
+          <span class="track-number">13</span>
+          <span class="track-copy"><strong>Maalai Mangum Neram</strong><small>Ranina Reddy</small></span>
+          <span class="track-duration">2:18</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="13" role="listitem" data-search="neeyum naanum anbe raghu dixit, sathyaprakash &amp; jithin raj">
+          <span class="track-number">14</span>
+          <span class="track-copy"><strong>Neeyum Naanum Anbe</strong><small>Raghu Dixit, Sathyaprakash &amp; Jithin Raj</small></span>
+          <span class="track-duration">4:45</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="14" role="listitem" data-search="ennodu nee irundhaal a.r. rahman, sid sriram &amp; sunitha sarathy">
+          <span class="track-number">15</span>
+          <span class="track-copy"><strong>Ennodu Nee Irundhaal</strong><small>A.R. Rahman, Sid Sriram &amp; Sunitha Sarathy</small></span>
+          <span class="track-duration">5:53</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="15" role="listitem" data-search="mehabooba (vaa vaa en anbe) ananya bhat">
+          <span class="track-number">16</span>
+          <span class="track-copy"><strong>Mehabooba (Vaa Vaa En Anbe)</strong><small>Ananya Bhat</small></span>
+          <span class="track-duration">3:32</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="16" role="listitem" data-search="bae kannala thittidathe aditya r.k">
+          <span class="track-number">17</span>
+          <span class="track-copy"><strong>Bae Kannala Thittidathe</strong><small>Aditya R.K</small></span>
+          <span class="track-duration">4:02</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="17" role="listitem" data-search="marudaani a.r. rahman, madhushree &amp; hentry kuruvila">
+          <span class="track-number">18</span>
+          <span class="track-copy"><strong>Marudaani</strong><small>A.R. Rahman, Madhushree &amp; Hentry Kuruvila</small></span>
+          <span class="track-duration">6:27</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="18" role="listitem" data-search="alli pookal stephen zechariah">
+          <span class="track-number">19</span>
+          <span class="track-copy"><strong>Alli Pookal</strong><small>Stephen Zechariah</small></span>
+          <span class="track-duration">4:02</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="19" role="listitem" data-search="adi penne stephen zechariah &amp; srinisha jayaseelan">
+          <span class="track-number">20</span>
+          <span class="track-copy"><strong>Adi Penne</strong><small>Stephen Zechariah &amp; Srinisha Jayaseelan</small></span>
+          <span class="track-duration">3:54</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="20" role="listitem" data-search="azhage hiphop tamizha &amp; aadhi">
+          <span class="track-number">21</span>
+          <span class="track-copy"><strong>Azhage</strong><small>Hiphop Tamizha &amp; Aadhi</small></span>
+          <span class="track-duration">3:38</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="21" role="listitem" data-search="neethanae a.r. rahman &amp; shreya ghoshal">
+          <span class="track-number">22</span>
+          <span class="track-copy"><strong>Neethanae</strong><small>A.R. Rahman &amp; Shreya Ghoshal</small></span>
+          <span class="track-duration">4:29</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="22" role="listitem" data-search="oh penne anirudh ravichander, arjun &amp; charles bosco">
+          <span class="track-number">23</span>
+          <span class="track-copy"><strong>Oh Penne</strong><small>Anirudh Ravichander, Arjun &amp; Charles Bosco</small></span>
+          <span class="track-duration">3:34</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="23" role="listitem" data-search="velicha poove anirudh ravichander">
+          <span class="track-number">24</span>
+          <span class="track-copy"><strong>Velicha Poove</strong><small>Anirudh Ravichander</small></span>
+          <span class="track-duration">5:12</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="24" role="listitem" data-search="senjitaley anirudh ravichander">
+          <span class="track-number">25</span>
+          <span class="track-copy"><strong>Senjitaley</strong><small>Anirudh Ravichander</small></span>
+          <span class="track-duration">4:11</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="25" role="listitem" data-search="sirikkadhey srinidhi venkatesh, anirudh ravichander &amp; arjun kanungo">
+          <span class="track-number">26</span>
+          <span class="track-copy"><strong>Sirikkadhey</strong><small>Srinidhi Venkatesh, Anirudh Ravichander &amp; Arjun Kanungo</small></span>
+          <span class="track-duration">4:06</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="26" role="listitem" data-search="chellakuttiye pearle maaney &amp; jecin george">
+          <span class="track-number">27</span>
+          <span class="track-copy"><strong>Chellakuttiye</strong><small>Pearle Maaney &amp; Jecin George</small></span>
+          <span class="track-duration">3:46</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="27" role="listitem" data-search="kanna veesi kadhal ondru kanden">
+          <span class="track-number">28</span>
+          <span class="track-copy"><strong>Kanna Veesi</strong><small>Rahul Hariharan &amp; Sreenisha</small></span>
+          <span class="track-duration">4:02</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+        <button class="track-button" type="button" data-track-index="28" role="listitem" data-search="enadhuyire nikhil mathew">
+          <span class="track-number">29</span>
+          <span class="track-copy"><strong>Enadhuyire</strong><small>Nikhil Mathew</small></span>
+          <span class="track-duration">4:44</span>
+          <span class="track-action" aria-hidden="true">▶</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="secret-launch-wrap">
+      <button type="button" id="secretLaunchButton" class="secret-launch" disabled>
+        <span>♥</span>
+        <strong>A secret is waiting</strong>
+        <small>React to three songs to unlock it</small>
+      </button>
+    </div>
+
+    <p class="footer-copy">Made with all my love, only for my pasamana manaivi</p>
+  </main>
+
+  <aside class="sticky-love-player" id="stickyLovePlayer" aria-hidden="true">
+    <div class="sticky-vinyl" id="stickyVinyl"><img src="assets/our-photo.jpg?v=3" alt=""></div>
+    <div class="sticky-copy">
+      <strong id="stickyTitle">Choose a song</strong>
+      <span id="stickyArtist">Our love playlist</span>
+      <span class="sticky-progress"><i id="stickyProgressBar"></i></span>
+    </div>
+    <button type="button" id="stickyPrevious" aria-label="Previous song">‹</button>
+    <button type="button" id="stickyToggle" aria-label="Play or pause">▶</button>
+    <button type="button" id="stickyNext" aria-label="Next song">›</button>
+    <button type="button" id="stickyOpenCinema" aria-label="Open full-screen music moment">↗</button>
+  </aside>
+
+  <section class="music-cinema world-sunrise" id="musicCinema" aria-hidden="true">
+    <div class="cinema-world" aria-hidden="true">
+      <div class="world-light"></div>
+      <div class="world-rain"></div>
+      <div class="world-stars"></div>
+      <div class="world-ocean"></div>
+      <div class="cinema-particles" id="cinemaParticles"></div>
+    </div>
+
+    <div class="cinema-photo" aria-hidden="true">
+      <img src="assets/our-photo.jpg?v=3" alt="">
+    </div>
+
+    <button class="cinema-close" id="cinemaClose" type="button" aria-label="Close music moment">×</button>
+
+    <div class="cinema-shell">
+      <div class="cinema-topline">
+        <span>Our private music moment</span>
+        <button type="button" id="privateCinemaToggle">Private cinema</button>
+      </div>
+
+      <div class="cinema-main">
+        <div class="cinema-vinyl-wrap">
+          <div class="cinema-vinyl" id="cinemaVinyl">
+            <span class="cinema-vinyl-grooves"></span>
+            <span class="cinema-vinyl-label"><img src="assets/our-photo.jpg?v=3" alt=""></span>
+            <span class="cinema-vinyl-shine"></span>
+          </div>
+          <span class="vinyl-needle"></span>
+        </div>
+
+        <div class="cinema-copy">
+          <p class="micro-label" id="cinemaWorldLabel">Golden sunrise world</p>
+          <h2 id="cinemaTitle">Choose a song maa</h2>
+          <p id="cinemaArtist">Our music is waiting for you</p>
+          <blockquote id="cinemaDedication">Every melody carries my love to you</blockquote>
+
+          <div class="cinema-progress">
+            <span id="cinemaCurrent">0:00</span>
+            <input id="cinemaSeek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Song progress">
+            <span id="cinemaDuration">0:00</span>
+          </div>
+
+          <div class="cinema-controls">
+            <button type="button" id="cinemaPrevious" aria-label="Previous song">‹</button>
+            <button type="button" id="cinemaToggle" class="cinema-main-play" aria-label="Play or pause">▶</button>
+            <button type="button" id="cinemaNext" aria-label="Next song">›</button>
+          </div>
+
+          <div class="cinema-actions">
+            <button type="button" id="cinemaReaction">This song feels like us ♡</button>
+            <button type="button" id="heartbeatModeButton">Heartbeat mode</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="memory-cinema" id="memoryCinema">
+        <article class="memory-frame is-active">
+          <span>Our beginning</span>
+          <strong>5 June 2025</strong>
+          <p>The day my heart began writing every tomorrow with you in it</p>
+        </article>
+        <article class="memory-frame">
+          <span>Across the distance</span>
+          <strong>Singapore ↔ Johor Bahru</strong>
+          <p>Even when the road keeps us apart, my heart still wakes up beside you</p>
+        </article>
+        <article class="memory-frame">
+          <span>My favourite name</span>
+          <strong>Pondati</strong>
+          <p>One little word that carries my comfort, my happiness, and my whole future</p>
+        </article>
+        <article class="memory-frame">
+          <span>My promise</span>
+          <strong>I will never leave you</strong>
+          <p>I will remain with you in your heart, your mind, and every quiet moment</p>
+        </article>
+      </div>
+
+      <div class="hold-hand-zone">
+        <button type="button" id="holdHandButton">
+          <span class="hold-ring"></span>
+          <span class="hold-heart">♥</span>
+          <strong>Press and hold my hand</strong>
+          <small id="holdHandMessage">I am right here baby maa</small>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="secret-chamber" id="secretChamber" aria-hidden="true">
+    <div class="secret-photo" aria-hidden="true"><img src="assets/our-photo.jpg?v=3" alt=""></div>
+    <div class="secret-glow" aria-hidden="true"></div>
+    <article class="secret-card">
+      <button type="button" class="secret-close" id="secretClose" aria-label="Close secret chamber">×</button>
+      <p class="micro-label">A hidden room inside my heart</p>
+      <h2>There is one more thing I need you to know pondati</h2>
+      <p>I may not always be beside you physically, but I am never away from you. I live in every thought that comforts you, every memory that makes you smile, and every tomorrow I am waiting to share with you</p>
+      <div class="secret-heartbeat"><span></span></div>
+      <button type="button" id="playSecretSong">Play our secret song</button>
+      <small>Unlocked by the love you left inside our songs</small>
+    </article>
+  </section>
+
+  <section class="love-finale" id="loveFinale" aria-hidden="true">
+    <div class="finale-stars" id="finaleStars" aria-hidden="true"></div>
+    <div class="finale-heart-map" aria-hidden="true">
+      <svg viewBox="0 0 420 340">
+        <path d="M210 295 C164 250 55 170 55 92 C55 24 144 12 210 91 C276 12 365 24 365 92 C365 170 256 250 210 295 Z"></path>
+      </svg>
+      <img src="assets/our-photo.jpg?v=3" alt="">
+    </div>
+    <article>
+      <p class="micro-label">Our constellation is complete</p>
+      <h2>Every song brought my heart back to you</h2>
+      <p>The music may finish, maa, but my love for you never will. I will keep choosing you in every morning, every tomorrow, and every lifetime</p>
+      <div>
+        <button type="button" id="replayLoveStory">Play our love story again ♥</button>
+        <button type="button" id="finaleKisses">Send me more kisses 💋</button>
+        <button type="button" id="closeFinale">Return to our morning</button>
+      </div>
+    </article>
+  </section>
+
+    <section class="letter-modal" id="letterModal" aria-hidden="true">
+    <div class="letter-backdrop" data-close-letter></div>
+    <article class="letter-sheet" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+      <button class="modal-close" id="closeLetter" type="button" aria-label="Close letter">×</button>
+      <p class="micro-label">My morning promise</p>
+      <h2 id="letterTitle">En Pasamana Manaivi,</h2>
+      <div class="letter-copy">
+        <p>
+  I want you to remember this always maa, I will never leave you maa. No matter how far we are or how difficult some days may become, I will always stay with you in your heart, in your mind, and beside your soul. You will never have to face anything alone because my love will always be there holding your hand.
+</p>
+
+<p>
+  I love you so much maa, more than I can ever explain properly through words. You are not only my wife you are my happiness, my peace, my comfort, my safe place, and the person my heart wants in every tomorrow. Loving you is the most beautiful part of my life, and I will always choose you again and again.
+</p>
+
+<p>
+  I miss you terribly maa, more than anything. I miss your voice, your smile, your little expressions, your hugs, and simply having you close to me. Sometimes the distance hurts so much because all I want is to be beside you, look into your eyes, hold you tightly, and never let you go.
+</p>
+
+<p>
+  So this morning, close your eyes for one small moment maa and imagine me standing beside you, kissing your forehead, hugging you gently, and telling you, “I am here with you, my pondati.” Until the day I can wake up beside you for real, carry my love with you everywhere you go because my heart is always right there with you maa.
+</p>
+
+<p>
+  Start your morning with a beautiful smile for me maa. I love you so much, I miss you terribly, and no distance in this world can ever change the place you have inside my heart. You are mine, I am yours, and I will always be with you today, tomorrow, and forever maa.
+</p>
+      </div>
+      <p class="signature">I love you so much maa<br>Always yours, today, tomorrow, and forever ☀♥</p>
+    </article>
+  </section>
+
+  <div class="kiss-layer" id="kissLayer" aria-hidden="true"></div>
+  <div class="heart-layer" id="heartLayer" aria-hidden="true"></div>
+
+  <audio id="loveSong" preload="auto">
+    <source src="assets/our-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="playlistAudio" preload="metadata"></audio>
+</body>
+</html>
